@@ -11,6 +11,7 @@ body {
 
 .game-container {
     max-width: 800px;
+    width: 100%;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +31,7 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #e32d2d; 
+    color: #e32d2d; /* Cor vermelha para o título */
     margin-bottom: 20px;
 }
 
@@ -38,18 +39,26 @@ h1 {
     margin: 20px 0;
 }
 
+#game-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #code-input {
     width: 100%;
+    max-width: 600px;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    border: 2px solid #e32d2d; 
+    border: 2px solid #e32d2d; /* Borda vermelha */
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #e32d2d; 
+    background-color: #e32d2d; /* Cor vermelha para o botão */
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #a62222; 
+    background-color: #a62222; /* Cor vermelha mais escura no hover */
     transform: scale(1.05);
 }
 
