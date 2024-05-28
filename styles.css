@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: #a62222;
+    background-color: #a62222; 
     transform: scale(1.05);
 }
 

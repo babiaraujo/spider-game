@@ -34,20 +34,30 @@ const levels = [
     },
     {
         story: "Peter deve modificar o conteúdo de uma página da web para encontrar pistas escondidas pelos vilões.",
-        instructions: "Use JavaScript para alterar o texto de um elemento `<p>` com id `mensagem` para 'Pista encontrada!'.",
+        instructions: "Use JavaScript para criar um elemento `<p>` com id `mensagem` e definir seu texto para 'Pista encontrada!'.",
         validate: function() {
-            const pElement = document.createElement('p');
-            pElement.id = 'mensagem';
-            document.body.appendChild(pElement);
+            const container = document.getElementById('test-container');
+            container.innerHTML = ''; 
+
             try {
                 eval(document.getElementById('code-input').value);
+                const pElement = container.querySelector('#mensagem');
+                return pElement && pElement.innerText === 'Pista encontrada!';
             } catch (e) {
-                document.body.removeChild(pElement);
                 throw e;
             }
-            const result = pElement.innerText === 'Pista encontrada!';
-            document.body.removeChild(pElement);
-            return result;
+        }
+    },
+    {
+        story: "Peter precisa decifrar um código complexo para acessar um sistema de segurança.",
+        instructions: "Escreva uma função chamada `decifrarCodigo` que retorna a string 'Código decifrado!'.",
+        validate: function() {
+            try {
+                eval(document.getElementById('code-input').value);
+                return typeof decifrarCodigo !== 'undefined' && decifrarCodigo() === 'Código decifrado!';
+            } catch (error) {
+                return false;
+            }
         }
     }
 ];
