@@ -18,5 +18,3 @@ O objetivo do jogo é ensinar os conceitos fundamentais de JavaScript, como vari
 4. Escreva o código JavaScript necessário para resolver o desafio.
 5. Clique em "Executar Código" para verificar sua resposta.
 6. Se seu código estiver correto, avance para o próximo nível clicando em "Próximo Nível".
-
-## Estrutura do Projeto
