@@ -31,7 +31,7 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #e32d2d; /* Cor vermelha para o título */
+    color: #e32d2d; 
     margin-bottom: 20px;
 }
 
@@ -51,14 +51,14 @@ h1 {
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    border: 2px solid #e32d2d; /* Borda vermelha */
+    border: 2px solid #e32d2d; 
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #e32d2d; /* Cor vermelha para o botão */
+    background-color: #e32d2d; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #a62222; /* Cor vermelha mais escura no hover */
+    background-color: #a62222;
     transform: scale(1.05);
 }
 
